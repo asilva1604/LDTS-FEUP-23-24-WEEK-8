@@ -13,10 +13,12 @@ public class StringBar extends Bar{
     @Override
     public void startHappyHour() {
         this.happyHour = true;
+        notifyObservers();
     }
 
     @Override
     public void endHappyHour() {
         this.happyHour = false;
+        notifyObservers();
     }
 }
